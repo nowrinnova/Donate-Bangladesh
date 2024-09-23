@@ -19,6 +19,10 @@
       position: sticky;
       top: 0;
     } */
+    .btn-click {
+
+      background-color: #ffd1dd;
+    }
   </style>
 </head>
 
@@ -42,9 +46,9 @@
         </div>
       </div>
       <!-- Donate & History button section starts -->
-      <div class="btn-section flex justify-center">
-        <button class="btn btn-outline btn-primary m-4">Donate</button>
-        <button class="btn btn-outline btn-primary m-4">History</button>
+      <div class=" flex justify-center gap-4">
+        <button id="donateBtn" class="btn btn-outline btn-primary m-4 ">Donate</button>
+        <button id="historyBtn" class="btn btn-outline btn-primary m-4 ">History</button>
       </div>
       <!-- discount & History button section ends -->
     </nav>
@@ -57,7 +61,7 @@
   <main class="p-1 ">
 
     <!-- donation section starts -->
-    <div class="donation-section">
+    <div id="donation-section" class="donation-section">
       <!-- card 1 section starts-->
       <div class="card lg:card-side bg-base-100 shadow-xl pt-2 ">
         <figure>
@@ -204,6 +208,9 @@
       <!-- card 3 section ends-->
     </div>
     <!-- donation section ends -->
+    <script src="./js/feature.js"></script>
+    <script src="./js/donate.js"></script>
+    <script src="./js/history.js"></script>
   </main>
 </body>
 
