@@ -26,7 +26,7 @@ donateNow2.addEventListener('click',(event)=>{
   const donateAmountNumber =returnAmount('donate-amount2');
   document.getElementById('donate-amount2').value=" ";
    // validation is it a number or not
-   if((!isNaN(donateAmountNumber)) && (donateAmountNumber>0)){
+  if((!isNaN(donateAmountNumber)) && (donateAmountNumber>0)){
     const donateBalance=parseFloat(document.getElementById('donate2').innerText);
     const updatedDonateBalance=parseFloat(donateAmountNumber+donateBalance);
     document.getElementById('donate2').innerText=updatedDonateBalance;
@@ -35,7 +35,6 @@ donateNow2.addEventListener('click',(event)=>{
     else{
       alert('Your amount is not valid .Please Try Again')
     }
- 
 })
 // add donation for card 3
 const donateNow3=document.getElementById('donate-button3');
@@ -44,7 +43,7 @@ donateNow3.addEventListener('click',(event)=>{
   const donateAmountNumber =returnAmount('donate-amount3');
   document.getElementById('donate-amount3').value=" ";
    // validation is it a number or not
-   if((!isNaN(donateAmountNumber)) && (donateAmountNumber>0)){
+  if((!isNaN(donateAmountNumber)) && (donateAmountNumber>0)){
   const donateBalance=parseFloat(document.getElementById('donate3').innerText);
   const updatedDonateBalance=parseFloat(donateAmountNumber+donateBalance);
   document.getElementById('donate3').innerText=updatedDonateBalance;
