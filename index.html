@@ -61,7 +61,7 @@
   <main class="p-1 ">
 
     <!-- donation section starts -->
-    <div id="donation-section" class="donation-section">
+    <div id="donation-section" class="donation-section ">
       <!-- card 1 section starts-->
       <div class="card lg:card-side bg-base-100 shadow-xl pt-2 ">
         <figure>
@@ -70,7 +70,7 @@
         <div class="card-body w-3/4 lg:w-1/2 mx-auto">
           <div class="card-actions justify-start">
             <button class="btn btn-outline btn-error">
-              <img src="./assets/coin.png" alt="" /> <span>0.00</span>BDT
+              <img src="./assets/coin.png" alt="" /> <span id="donate1">0.00</span>BDT
             </button>
           </div>
           <div class="">
@@ -85,22 +85,28 @@
               supporting the relief efforts and making a positive impact on
               the lives of those in need.
             </p>
-            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+            <input id="donate-amount1" type="text" placeholder="Write Donation Amount"
+              class="input input-bordered w-full max-w-xs" />
           </div>
           <div class="card-actions">
-            <button class="btn btn-primary w-full text-white" onclick="my_modal_1.showModal()">
+            <button id="donate-button1" class="btn btn-primary w-full text-white">
               Donate Now
             </button>
+            <!-- onclick="my_modal_1.showModal()" -->
           </div>
           <!-- modal section start -->
           <dialog id="my_modal_1" class="modal">
-            <div class="modal-box">
-              <h3 class="text-lg font-bold">Hello!</h3>
-              <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-box text-center">
+              <h3 class="text-2xl font-bold ">Congrats!</h3>
+              <div class="flex justify-center my-4">
+                <img src="./assets/coin.png" alt="" />
+              </div>
+              <p class="py-4 ">You have donated for HumanKind</p>
+              <h3 class="text-lg font-bold ">Successfully</h3>
               <div class="modal-action">
                 <form method="dialog">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
+                  <button class="btn">Close confirmation</button>
                 </form>
               </div>
             </div>
@@ -117,7 +123,7 @@
         <div class="card-body w-3/4 lg:w-1/2 mx-auto">
           <div class="card-actions justify-start">
             <button class="btn btn-outline btn-error">
-              <img src="./assets/coin.png" alt="" /> <span>0.00</span>BDT
+              <img src="./assets/coin.png" alt="" /> <span id="donate2">10000</span>BDT
             </button>
           </div>
           <div class="">
@@ -134,21 +140,27 @@
               towards making a real difference. Please consider donating today
               to assist those in urgent need.
             </p>
-            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+            <input id="donate-amount2" type="text" placeholder="Write Donation Amount"
+              class="input input-bordered w-full max-w-xs" />
           </div>
           <div class="card-actions">
-            <button class="btn btn-primary w-full text-white" onclick="my_modal_2.showModal()">
+            <button id="donate-button2" class="btn btn-primary w-full text-white">
               Donate Now
             </button>
+            <!-- onclick="my_modal_2.showModal()" -->
             <!-- modal section start - -->
             <dialog id="my_modal_2" class="modal">
-              <div class="modal-box">
-                <h3 class="text-lg font-bold">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
+              <div class="modal-box text-center">
+                <h3 class="text-2xl font-bold ">Congrats!</h3>
+                <div class="flex justify-center my-4">
+                  <img src="./assets/coin.png" alt="" />
+                </div>
+                <p class="py-4 ">You have donated for HumanKind</p>
+                <h3 class="text-lg font-bold ">Successfully</h3>
                 <div class="modal-action">
                   <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn">Close</button>
+                    <button class="btn">Close confirmation</button>
                   </form>
                 </div>
               </div>
@@ -166,7 +178,7 @@
         <div class="card-body w-3/4 lg:w-1/2 mx-auto">
           <div class="card-actions justify-start">
             <button class="btn btn-outline btn-error">
-              <img src="./assets/coin.png" alt="" /> <span>0.00</span>BDT
+              <img src="./assets/coin.png" alt="" /> <span id="donate3">4000</span>BDT
             </button>
           </div>
           <div class="">
@@ -182,22 +194,28 @@
               recovery. Please consider making a donation to support these
               brave individuals in their time of need.
             </p>
-            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+            <input id="donate-amount3" type="text" placeholder="Write Donation Amount"
+              class="input input-bordered w-full max-w-xs" />
           </div>
           <div class="card-actions">
-            <button class="btn btn-primary w-full text-white" onclick="my_modal_3.showModal()">
+            <button id="donate-button3" class="btn btn-primary w-full text-white">
               Donate Now
             </button>
+            <!-- onclick="my_modal_3.showModal()" -->
           </div>
           <!-- modal section start - -->
           <dialog id="my_modal_3" class="modal">
-            <div class="modal-box">
-              <h3 class="text-lg font-bold">Hello!</h3>
-              <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-box text-center">
+              <h3 class="text-2xl font-bold ">Congrats!</h3>
+              <div class="flex justify-center my-4">
+                <img src="./assets/coin.png" alt="" />
+              </div>
+              <p class="py-4 ">You have donated for HumanKind</p>
+              <h3 class="text-lg font-bold ">Successfully</h3>
               <div class="modal-action">
                 <form method="dialog">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
+                  <button class="btn">Close confirmation</button>
                 </form>
               </div>
             </div>
@@ -208,9 +226,17 @@
       <!-- card 3 section ends-->
     </div>
     <!-- donation section ends -->
+
+    <!-- history section starts -->
+    <div id="history-section" class="history-section hidden">
+
+    </div>
+    <!-- history section ends -->
     <script src="./js/feature.js"></script>
     <script src="./js/donate.js"></script>
     <script src="./js/history.js"></script>
+    <script src="./js/submit-file.js"></script>
+
   </main>
 </body>
 
