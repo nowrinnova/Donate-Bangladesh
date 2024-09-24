@@ -1,14 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="synthwave">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <!-- daisy UI config -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- front awesome config -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-  <h1>home page</h1>
+<body class="max-w-4xl mx-auto">
+  <header class="sticky top-0 z-10 bg-[#1A103D]">
+    <nav>
+      <div class="navbar p-1 lg:p-2">
+        <div class="navbar-start">
+          <a href="./index.html" class="btn btn-error text-sm lg:ml-2 rounded">Home</a>
+        </div>
+        <div class="navbar-center lg:flex lg:gap-1">
+          <img src="./assets/logo.png" class="w-5">
+          <h1 class="text-sm lg:text-2xl font-bold"> Donate Bangladesh</h1>
+        </div>
+        <div class="navbar-end flex">
+          <!-- <img src="./assets/coin.png" alt="" /> -->
+          <h1 class="lg:p-2 rounded text-white">
+            <!-- <span id="account-balance" class="font-bold">5500 </span>BDT -->
+            FAQ
+          </h1>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="divider"></div>
+  <main>
+    <!-- accrodation starts -->
+    <div class="flex font-bold m-7">
+      <h1 class="text-3xl">
+        Importent FAQ
+      </h1>
+      <i class="fa-regular fa-circle-question"></i>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the Document object Module(DOM)?</div>
+      <div class="collapse-content p-4">
+        <p>When a web page is loaded, the browser creates a Document Object Model of the page.With the object model,
+          JavaScript gets all the power it needs to create dynamic HTML :
+          <ul class="list-disc p-2 pl-6">
+            <li>JavaScript can change all the HTML elements , attribute in the page</li>
+            <li>JavaScript can change all the HTML attributes in the page</li>
+            <li>JavaScript can change all the CSS styles in the page</li>
+            <li>JavaScript can create new HTML events in the page</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p>To select an element from the DOM (Document Object Model) in JavaScript, there are several methods you can
+          use depending on how you want to target the element. Below are the most common methods:
+          <ul class="list-disc">
+            <li>document.getElementById()</li>
+            <li>document.querySelector()</li>
+            <li>document.querySelectorAll()</li>
+            <li>document.getElementsByClassName()</li>
+            <li>document.getElementsByTagName()</li>
+          </ul>
+          Use getElementById when you know the element has a unique ID. <br>
+          Use querySelector for more complex or flexible CSS-style selections. <br>
+          Use querySelectorAll or getElementsByClassName when selecting multiple elements. <br>
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event Deligation in the context of the DOM and why is it
+        usefull</div>
+      <div class="collapse-content">
+        <p>Event delegation is a technique in JavaScript where instead of attaching event listeners to specific child
+          elements, you attach a single event listener to a parent element. The event then "bubbles up" from the child
+          to the parent, allowing you to handle events for multiple child elements with just one listener.
+          <br>
+          This is particularly useful in scenarios where you have many child elements, or if child elements are
+          dynamically added to the DOM, and you want to handle events on all of them efficiently.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
+        DOM </div>
+      <div class="collapse-content">
+        <p>In JavaScript, you can manipulate an element's attributes and styles using various methods provided by the
+          DOM
+          API. Here’s a breakdown of how to work with attributes and styles for a DOM element.
+          <ul class="list-disc p-2 pl-6">
+            <li>getAttribute()</li>
+            <li>setAttribute()</li>
+            <li>removeAttribute()</li>
+            <li>using classList-> add(),remove(),toggle(),contains()</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    </div>
+    <!-- accrodation ends -->
+  </main>
+
 </body>
 
 </html>
