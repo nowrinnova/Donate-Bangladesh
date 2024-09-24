@@ -63,7 +63,7 @@ donateNow2.addEventListener('click',(event)=>{
     document.getElementById('donate2').innerText=updatedDonateBalance;
       // add the donation history to the history section
   const h2=document.createElement('h2');
-  h2.innerText=`${donateAmountNumber} Taka is Donated for Flood at Noakhali, Bangladesh`;
+  h2.innerText=`${donateAmountNumber} Taka is  Donate for Flood Relief in Feni,Bangladesh`;
   document.getElementById('history-section').appendChild(h2);
   const time= new Date();
   const p =document.createElement('p');
@@ -105,7 +105,7 @@ donateNow3.addEventListener('click',(event)=>{
       
        // add the donation history to the history section
     const h2=document.createElement('h2');
-    h2.innerText=`${donateAmountNumber} Taka is Donated for Flood at Noakhali, Bangladesh`;
+    h2.innerText=`${donateAmountNumber} Taka is Donated for Aid for Injured in the Quota Movement`;
     document.getElementById('history-section').appendChild(h2);
     const time= new Date();
     const p =document.createElement('p');
